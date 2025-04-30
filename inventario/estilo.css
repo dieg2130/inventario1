@@ -1,0 +1,151 @@
+/* Estilo general de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Usamos flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    flex-direction: column; /* Coloca los elementos en columna */
+}
+
+/* Estilo del botón de volver a stock */
+button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0 20px 10px; /* Mueve el botón a la izquierda */
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Contenedor del formulario */
+form {
+    background-color: #e9f6e9; /* Verde claro */
+    padding: 50px;
+    border-radius: 10px;
+    max-width: 500px; /* Ancho máximo del formulario */
+    width: 100%; /* Asegura que el formulario ocupe todo el ancho disponible */
+    margin: 20px auto; /* Centra el formulario en la página */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    color: #333;
+    display: block; /* Hace que las etiquetas ocupen toda la línea */
+    margin-bottom: 10px; /* Espacio debajo de las etiquetas */
+}
+
+form input[type="text"],
+form input[type="file"] {
+    width: 100%; /* Asegura que los campos ocupen todo el ancho del formulario */
+    padding: 10px; /* Aumenta el padding para mayor comodidad */
+    margin: 10px 0; /* Espacio entre los campos */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto; /* El botón ocupa solo el espacio necesario */
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Tabla de archivos PDF */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Enlaces de la tabla */
+table a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor de mensaje de éxito */
+.success-message {
+    background-color: #d4edda; /* Verde claro */
+    color: #155724; /* Verde oscuro */
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 80%;
+    margin: 10px auto;
+}
+
+/* Contenedor de búsqueda de inventario */
+.search-container {
+    background-color: #e9f6e9;
+    padding: 15px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center; /* Centra los elementos dentro del contenedor */
+    align-items: center;
+}
+
+.search-container input[type="text"],
+.search-container select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px; /* Espacio entre el campo de búsqueda y el botón */
+}
+
+.search-container .add-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-container .add-button:hover {
+    background-color: #45a049;
+}
